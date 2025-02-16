@@ -1,64 +1,64 @@
 # Discord Bot Automation
 
-Ein Python-Bot zur automatischen Verwaltung von Discord-Server-Strukturen.
+A Python bot for automated management of Discord server structures.
 
 ## Installation
 
-1. Erstelle eine virtuelle Umgebung:
+1. Create a virtual environment:
 ```bash
-cd /Users/denniswiebler/Documents/VSC/Discord-Bot-Automation
+cd Discord-Bot-Automation
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-2. Installiere die erforderlichen Pakete:
+2. Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Einrichtung
+## Setup
 
-1. Erstelle einen Discord-Bot:
-   - Gehe zu [Discord Developer Portal](https://discord.com/developers/applications)
-   - Klicke auf "New Application"
-   - Gehe zum "Bot" Bereich
-   - Aktiviere alle "Privileged Gateway Intents"
-   - Kopiere den Bot-Token
+1. Create a Discord Bot:
+   - Go to [Discord Developer Portal](https://discord.com/developers/applications)
+   - Click "New Application"
+   - Go to the "Bot" section
+   - Enable all "Privileged Gateway Intents"
+   - Copy the bot token
 
-2. Konfiguriere den Bot:
+2. Configure the bot:
 ```bash
 python src/setup.py
 ```
-Füge deinen Bot-Token ein, wenn du dazu aufgefordert wirst.
+Enter your bot token when prompted.
 
-3. Lade den Bot in deinen Server ein:
-   - Gehe im Developer Portal zu "OAuth2" -> "URL Generator"
-   - Wähle die Scopes: "bot" und "applications.commands"
-   - Bei Bot Permissions wähle "Administrator"
-   - Öffne die generierte URL im Browser
-   - Wähle deinen Server aus
+3. Invite the bot to your server:
+   - In the Developer Portal, go to "OAuth2" -> "URL Generator"
+   - Select scopes: "bot" and "applications.commands"
+   - For Bot Permissions, select "Administrator"
+   - Open the generated URL in your browser
+   - Select your server
 
-## Verwendung
+## Usage
 
-1. Starte den Bot:
+1. Start the bot:
 ```bash
 python src/discord_bot.py
 ```
 
-2. Folge den Anweisungen:
-   - Gib den gewünschten Server-Namen ein
-   - Bestätige die Änderungen
+2. Follow the prompts:
+   - Enter the desired server name
+   - Confirm the changes
 
-Der Bot wird dann:
-- Den Server-Namen aktualisieren
-- Alle existierenden Kanäle löschen
-- Neue Kategorien und Kanäle erstellen basierend auf der Template-Datei
+The bot will:
+- Update the server name
+- Delete all existing channels
+- Create new categories and channels based on the template file
 
-## Anpassung der Server-Struktur
+## Customizing Server Structure
 
-Die Server-Struktur ist in `src/templates/server_template.json` definiert. Du kannst diese Datei bearbeiten, um die Kategorien und Kanäle anzupassen.
+The server structure is defined in `src/templates/server_template.json`. You can edit this file to customize the categories and channels.
 
-## Projektstruktur
+## Project Structure
 
 ```
 Discord-Bot-Automation/
@@ -74,9 +74,34 @@ Discord-Bot-Automation/
 └── venv/
 ```
 
-## Sicherheitshinweise
+## Security Notes
 
-- Teile niemals deinen Bot-Token
-- Der Bot-Token wird sicher in der .env-Datei gespeichert
-- Stelle sicher, dass der Bot Administrator-Rechte hat
-- Beachte das Discord-Limit von 10 Server-Erstellungen pro Tag
+- Never share your bot token
+- The bot token is securely stored in the .env file
+- Ensure the bot has Administrator rights
+- Be aware of Discord's limit of 10 server creations per day
+
+## Features
+
+- Automated server structure creation
+- Customizable categories and channels
+- Support for both text and voice channels
+- Emoji support in channel names
+- Clean and organized project structure
+- Secure configuration handling
+
+## Requirements
+
+- Python 3.11 or higher
+- discord.py library
+- python-dotenv for configuration
+- Internet connection
+- Discord account with server management permissions
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests for any improvements you'd like to add.
+
+## License
+
+This project is open source and available under the MIT License.
