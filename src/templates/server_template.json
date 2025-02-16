@@ -1,0 +1,72 @@
+{
+    "categories": [
+        {
+            "name": "📢 Info",
+            "channels": [
+                {
+                    "name": "📜│regeln",
+                    "type": "text"
+                },
+                {
+                    "name": "📢│ankündigungen",
+                    "type": "text"
+                },
+                {
+                    "name": "💡│faq",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "name": "💬 Community",
+            "channels": [
+                {
+                    "name": "💬│allgemein",
+                    "type": "text"
+                },
+                {
+                    "name": "🎨│showcase",
+                    "type": "text"
+                },
+                {
+                    "name": "🛠│hilfe",
+                    "type": "text"
+                },
+                {
+                    "name": "🤖│bot-commands",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "name": "📂 Ressourcen",
+            "channels": [
+                {
+                    "name": "📚│tutorials",
+                    "type": "text"
+                },
+                {
+                    "name": "🔗│nützliche-links",
+                    "type": "text"
+                },
+                {
+                    "name": "🎁│freebies",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "name": "🔊 Voice Chats",
+            "channels": [
+                {
+                    "name": "🔊│Allgemeiner Talk",
+                    "type": "voice"
+                },
+                {
+                    "name": "🎙│Coworking",
+                    "type": "voice"
+                }
+            ]
+        }
+    ]
+}
